@@ -15,6 +15,7 @@ const containers = document.createElement("div");
 containers.className = "containers";
   const datadisplay = document.createElement("div");
   datadisplay.className = "datadisplay";
+  datadisplay.id = "error";
   datadisplay.innerText = "Please Enter Between 1-1330";
   containers.append(datadisplay);
   document.querySelector(".wrapper").append(containers);
