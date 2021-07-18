@@ -13,10 +13,10 @@ input = document.getElementById("num").value;
   {
 const containers = document.createElement("div");
 containers.className = "containers";
-  const datadisplay = document.createElement("div");
-  datadisplay.className = "datadisplay";
-  datadisplay.innerText = "Please Enter Between 1-1330";
-  containers.append(datadisplay);
+  const datadisplayy = document.createElement("div");
+  datadisplayy.className = "datadisplay";
+  datadisplayy.innerText = "Please Enter Between 1-1330";
+  containers.append(datadisplayy);
   document.querySelector(".wrapper").append(containers);
   alert("Error Catched");
 })
