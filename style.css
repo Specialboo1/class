@@ -98,7 +98,7 @@ text-align: center;
     border-radius: 20px;
     padding: 5px;
     white-space: nowrap;
-    text-align: center;
+    text-align: left;
 }
 
 @media (max-width: 600px)
