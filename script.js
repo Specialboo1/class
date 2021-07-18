@@ -14,7 +14,7 @@ input = document.getElementById("num").value;
 const containers = document.createElement("div");
 containers.className = "containers";
   const datadisplayy = document.createElement("div");
-  datadisplayy.className = "datadisplay";
+  datadisplayy.className = "datadisplayy";
   datadisplayy.innerText = "Please Enter Between 1-1330";
   containers.append(datadisplayy);
   document.querySelector(".wrapper").append(containers);
