@@ -1,0 +1,103 @@
+.background
+{
+    background-color: linen;
+}
+.heading
+{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.cover {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1vw;
+    margin-top: 20px;
+    justify-self: center;
+  }
+ .innercover
+ {
+     border: 1px solid tomato;
+     padding-left: 5px;
+     padding-right: 5px;
+     margin-top: 10px;
+     margin-left: 10px;
+     height: 80vh;
+     border-radius: 20px;
+     text-align: center;
+ }
+ .innercover .label
+ {
+    margin-top: 10px;
+    font-weight: bolder;
+ }
+ .innercover #choice
+ {
+     margin-top: 20px;
+ }
+ .innercover #update
+ {
+    margin-top: 20px;
+    text-align: center;
+    color: crimson;
+    font-weight: bolder;
+ }
+ .datedata .labeldate
+{    
+    font-weight: bolder;
+}
+.datedata #today
+{
+    margin-top: 20px;
+}
+.datedata .datevalue
+{
+    margin-top: 20px;
+    text-align: center;
+    color: crimson;
+    font-weight: bolder;
+}
+.euro_img
+{
+margin-top: 10px;
+color: violet;
+font-size: xx-large;
+padding: 10px;
+}
+.conversioncontainer
+{
+    border: 1px solid tomato;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 80vh;
+    border-radius: 20px;
+     text-align: center;
+}
+.labelselection
+{
+    margin-top: 10px;
+    font-weight: bolder;
+}
+#covertfrom, #covertto
+{
+    margin-top: 20px;
+}
+#conversion_rate
+{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+    color: crimson;
+}
+.sack_img
+{
+margin-top: 10px;
+color: violet;
+font-size: xxx-large;
+padding: 10px;
+}
+ 
