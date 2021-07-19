@@ -106,8 +106,8 @@ else if (currency_selected != "Select Currency")
 var temp2 = +1;
 function coversionrate()
 {
-  var convertfrom = document.getElementById("covertto").value;
-  var convertto = document.getElementById("covertfrom").value;
+  var convertfrom = document.getElementById("covertfrom").value;
+  var convertto = document.getElementById("covertto").value;
   if (convertfrom != "Select Currency" && convertto != "Select Currency")
   {
   fetch(`https://api.exchangerate.host/convert?from=${convertfrom}&to=${convertto}`, {
