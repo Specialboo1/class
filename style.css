@@ -98,6 +98,7 @@ margin: 0px 3px 0 -5px;
 }
 #data
 {
+     min-width: 300px;
     max-width: 300px;
 }
 .pagination{
