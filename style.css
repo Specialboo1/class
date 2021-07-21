@@ -1,8 +1,3 @@
-.wrapper
-{
-    height: 100vh;
-    border: 2px solid gold;
-}
 #page
 {
     width: 10%;
@@ -14,7 +9,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap:2px;
     justify-self: center;
-    margin-bottom: 0px;
 }
 #data
 {
@@ -22,6 +16,7 @@
     border-radius: 20px;
     text-align: center;
     background: rgb(185, 137, 185);
+    overflow-y: auto;
 }
 #title,#date
 {
@@ -43,15 +38,11 @@
     transform: translateY(-10px);
     transition: all 0.3s ease;
 }
-.pagination{
-    margin-bottom: 0%;
-}
 
 .pagination ul{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
     justify-content: center;
     justify-self: center;
 }
@@ -100,14 +91,14 @@ margin: 0px 3px 0 -5px;
 .display
 {
     display: grid;
-    grid-template-columns: 1fr;
-    max-width: 300px;
+    grid-template-columns: 1fr;    
     gap:2px;
-    align-self: center;
+    align-items: center;
+    justify-items: center;
 }
 #data
 {
-    height: 100%;
+    max-width: 300px;
 }
 .pagination{
     margin-top: 05px;
@@ -120,7 +111,18 @@ margin: 0px 3px 0 -5px;
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 450px;
-    gap:10px;
+    gap:2px;
 }
+}
+
+@media (min-width: 850px)
+{
+    .display
+    {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  minmax(77vh,77vh) 1fr;
+    gap:2px;
+    justify-self: center;
+    }
 }
