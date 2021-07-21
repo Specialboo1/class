@@ -1,0 +1,126 @@
+.wrapper
+{
+    height: 100vh;
+    border: 2px solid gold;
+}
+#page
+{
+    width: 10%;
+    text-align: center;
+}
+.display
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:2px;
+    justify-self: center;
+    margin-bottom: 0px;
+}
+#data
+{
+    border:1px solid magenta;
+    border-radius: 20px;
+    text-align: center;
+    background: rgb(185, 137, 185);
+}
+#title,#date
+{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#type
+{
+    margin-top: -15px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+#data:hover
+{
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+.pagination{
+    margin-bottom: 0%;
+}
+
+.pagination ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    justify-content: center;
+    justify-self: center;
+}
+.pagination ul li
+{
+    color:#0f4ce4 ;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+.pagination ul li.numb{
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50px;
+}
+.pagination ul li.numb.first{
+margin: 0px 3px 0 -5px;
+}
+.pagination ul li.numb.last{
+    margin: 0px -5px 0 3px;
+}
+.pagination ul li.dots{
+    font-size: 22px;
+    cursor: default;
+}
+.pagination ul li.btn{
+    padding: 0 20px;
+    border-radius: 50px;
+}
+
+.pagination li.active, .pagination ul li.numb:hover, .pagination li:first-child:hover, .pagination ul li:last-child:hover{
+    background: #0f4ce4;
+    color: #fff ;
+}
+
+@media (max-width: 600px)
+{
+.display
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    gap:2px;
+    align-self: center;
+}
+#data
+{
+    height: 100%;
+}
+.pagination{
+    margin-top: 05px;
+}
+}
+
+@media (min-width: 600px) and (max-width: 850px)
+{
+.display
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 450px;
+    gap:10px;
+}
+}
